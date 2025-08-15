@@ -1,50 +1,80 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  padding: 0;
   line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
 }
 
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 2rem;
+header.hero {
   text-align: center;
-}
-
-header nav a {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
-  margin: 0 1rem;
-  text-decoration: none;
 }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
+header.hero .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+header.hero h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header.hero p {
+  font-size: 1.2em;
+}
+
+header.hero nav {
+  margin-top: 20px;
+}
+
+header.hero nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-h2 {
-  color: #0d6efd;
-  margin-top: 0;
+.skills-list, .job ul, .project-card p, .section ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-.project, .job {
+.project-card {
   background: white;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.project-images img {
+  width: calc(33% - 10px);
+  border-radius: 5px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #e9ecef;
-  margin-top: 2rem;
+  padding: 20px;
+  background: #203a43;
+  color: white;
 }
