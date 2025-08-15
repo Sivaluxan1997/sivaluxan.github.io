@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sivaluxan Sivalingam - Data Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header / Hero -->
-  <header>
+  <header class="hero">
+    <img src="images/profile.jpg" alt="Sivaluxan Sivalingam" class="profile-img">
     <h1>Sivaluxan Sivalingam</h1>
     <p>Data Engineer & AI Enthusiast</p>
     <nav>
@@ -25,15 +26,15 @@
   </header>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>Results-driven Data Engineer with 2.5+ years of experience designing and automating scalable data pipelines and ETL/ELT workflows across cloud platforms including AWS, Azure, and GCP. Proven expertise in Snowflake and cloud data warehousing, with strong skills in SQL, Python, and orchestration tools such as Apache Airflow and NiFi. Solid foundation in data modeling, data integration, and ensuring data quality, integrity, and lineage across diverse sources. Adept at leveraging AI tools to optimize workflows, collaborating with cross-functional teams, and delivering reliable, high-performance data solutions.</p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Technical Skills</h2>
-    <ul>
+    <ul class="skills-list">
       <li><strong>Programming Languages:</strong> Python, Java, C, SQL, PySpark</li>
       <li><strong>Data Warehousing & Analytics:</strong> Snowflake, Databricks, Hadoop, Apache Spark</li>
       <li><strong>Data Engineering & Workflow Orchestration:</strong> ETL/ELT, Apache Airflow, Apache NiFi</li>
@@ -48,7 +49,7 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="section">
     <h2>Professional Experience</h2>
     <div class="job">
       <h3>Data Engineer - Axiata Digital Labs, Sri Lanka <span>(May 2022 – Jan 2024)</span></h3>
@@ -80,28 +81,40 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Multimodal AI for Inflammatory Skin Disease Diagnosis</h3>
-      <p>Evaluated Mistral 7B on QA benchmarks (TruthfulQA, PubMedQA) with 90% accuracy on PubMedQA. Created and labeled a dataset of 10+ skin disease images with GPT-generated descriptions. Fine-tuned Qwen2.5-VL-7B-Instruct using LoRA/QLoRA for improved image understanding.</p>
-    </div>
-    <div class="project">
+
+    <!-- Resume Analysis Project -->
+    <div class="project-card">
       <h3>Resume Data Analysis</h3>
-      <p>Processed and analyzed 5,000+ resumes, designed ER diagrams, and stored structured data in Azure SQL Database. Built Power BI dashboards and integrated them into a Flask web app for real-time insights.</p>
+      <p>Processed and analyzed 5,000+ resumes, designed ER diagrams, stored structured data in Azure SQL Database, and built interactive Power BI dashboards integrated into a Flask web app.</p>
+      <div class="project-images">
+        <img src="images/resume_analysis1.png" alt="Resume Analysis Screenshot 1">
+        <img src="images/resume_analysis2.png" alt="Resume Analysis Screenshot 2">
+        <img src="images/resume_analysis3.png" alt="Resume Analysis Screenshot 3">
+      </div>
     </div>
-    <div class="project">
+
+    <!-- Other Projects -->
+    <div class="project-card">
+      <h3>Multimodal AI for Inflammatory Skin Disease Diagnosis</h3>
+      <p>Evaluated Mistral 7B on QA benchmarks with 90% accuracy on PubMedQA. Created dataset of 10+ skin disease images and fine-tuned Qwen2.5-VL-7B-Instruct using LoRA/QLoRA.</p>
+    </div>
+
+    <div class="project-card">
       <h3>Best Sellers Book Ranking Web Application</h3>
       <p>Consumed NYT Books API data, normalized JSON into MySQL, and built a Flask app for viewing rankings. Deployed on AWS RDS and Heroku.</p>
     </div>
-    <div class="project">
+
+    <div class="project-card">
       <h3>Vision-based Posture and Stress Assessment System</h3>
-      <p>Developed a real-time monitoring system using NVIDIA Jetson Nano and RGB cameras to assess posture and stress. Extracted facial/body features and trained a deep learning model with 65% accuracy on test samples.</p>
+      <p>Developed a real-time monitoring system using NVIDIA Jetson Nano and RGB cameras to assess posture and stress. Trained a deep learning model achieving 65% accuracy on test samples.</p>
     </div>
+
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="section">
     <h2>Education</h2>
     <ul>
       <li>Postgraduate Certificate in Artificial Intelligence – Georgian College, Barrie (2025 Jan – Present)</li>
@@ -111,7 +124,7 @@
   </section>
 
   <!-- Certifications -->
-  <section id="certifications">
+  <section id="certifications" class="section">
     <h2>Certifications</h2>
     <ul>
       <li>Microsoft Certified: Azure Fundamentals</li>
@@ -120,7 +133,7 @@
   </section>
 
   <!-- Awards -->
-  <section id="awards">
+  <section id="awards" class="section">
     <h2>Awards & Recognition</h2>
     <ul>
       <li>Finalist (Top 20) – AI Hackathon, Axiata Digital Labs (2021)</li>
@@ -129,11 +142,11 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ssluxan16@gmail.com">ssluxan16@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/sivaluxan-sivalingam-2159b6152/" target="_blank">LinkedIn Profile</a></p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+    <p>GitHub: <a href="https://github.com/sivaluxan1997" target="_blank">github.com/sivaluxan1997</a></p>
   </section>
 
   <footer>
